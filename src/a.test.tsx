@@ -17,3 +17,7 @@ test("loads and displays greeting", async () => {
 
   expect(1).toBe(1);
 });
+
+test("环境变量", () => {
+  expect(process.env.NODE_ENV).toBe("test");
+});
