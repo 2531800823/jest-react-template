@@ -8,6 +8,7 @@ export default {
 
   moduleNameMapper: {
     "^.+\\.svg$": "jest-svg-transformer",
+    "^@/(.*)$": "<rootDir>/src/$1",
 
     "^.+\\.(css|less|scss)$": "identity-obj-proxy",
   },
