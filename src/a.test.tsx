@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import App from "./App";
+import App, { a } from "./App";
 
 test("loads and displays greeting", async () => {
   // ARRANGE
@@ -20,4 +20,11 @@ test("loads and displays greeting", async () => {
 
 test("环境变量", () => {
   expect(process.env.NODE_ENV).toBe("test");
+});
+
+test("lodash-es", () => {
+  expect(a).toEqual([
+    ["a", "b"],
+    ["c", "d"],
+  ]);
 });
