@@ -14,4 +14,5 @@ export default {
   },
 
   setupFilesAfterEnv: ["./test/jest-setup.ts"],
+  extensionsToTreatAsEsm: [".ts", ".tsx"],
 };
